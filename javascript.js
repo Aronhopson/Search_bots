@@ -61,26 +61,100 @@
 // }
 // console.log(loop([1,2,3],[1,4,9]))
 
-function anagram(x,y){
-    if(x.length !== y.length){
-        return false
-    }
+// function anagram(x,y){
+//     if(x.length !== y.length){
+//         return false
+//     }
 
-    const lookup = {}
+//     const lookup = {}
 
-    for(let i=0; i< x.length; i++){
-        let letter = x[i]
-        lookup[letter] ? lookup[letter] =+1 : lookup[letter]= 1
+//     for(let i=0; i< x.length; i++){
+//         let letter = x[i]
+//         lookup[letter] ? lookup[letter] =+1 : lookup[letter]= 1
+//     }
+//     for(let i=0; i<y.length; i++){
+//         let letter = y[i]
+//         if(!lookup[letter]){
+//             return false
+//         }else{
+//            lookup[letter] -=1
+//         }
+//     }
+//     return true
+// }
+
+// console.log(anagram(["q,w,e"],["q,w,eq"]))
+
+// function count(num) {
+//     for (let i=num; i>0; i--){
+//         console.log(i)
+//     }
+//     console.log("done")
+// }
+// count(6)
+
+//RECURSION
+
+// function rnge(num){
+//     if(num === 1) return 1;
+//     return num + rnge(num-1)
+// }
+// console.log(rnge(4))
+
+// function fact(num){
+//     let total=1;
+//     for(let i=num; i> 1; i-- ){
+//         total *= i
+//     }
+//     return total
+// }
+// console.log(fact(3))
+
+// RECURRSION FACTORIZATION
+// function factorial(num){
+//     if(num === 1) return 1;   //Always use base line
+//     return num * factorial(num-1)
+// }
+// console.log(factorial(5))
+
+// function pureRecur(num){
+//     let newarr =[];
+
+//     if(num.length === 0){
+//         return newarr
+//     }
+
+//     if(num[0] % 2 !== 0){
+//         newarr.push(num[0])
+//     }
+//     newarr = newarr.concat(pureRecur(num.slice(1)))
+//     return newarr
+// }
+// console.log(pureRecur([1,2,3,4,5,6,7]))
+
+//SEARCHING ALGORITHM
+
+// function search(num,val){
+//     for(let i=0; i<num.length; i++){
+//         if(num[i] === val)
+//         return i
+//     } 
+//     return -1
+// }
+
+// console.log(search([1,2,3,4,565,66,65,6,0],6))
+
+function binary(num, val){
+    let start = 0;
+    let end = num.length-1;
+    let middle = Math.floor((start+end)/2)
+
+    while(num[middle] !== val && start <= end){
+        if(val < num[middle]) end=middle-1;
+        else start=middle+1;
+        middle =Math.floor((start+end)/2)
     }
-    for(let i=0; i<y.length; i++){
-        let letter = y[i]
-        if(!lookup[letter]){
-            return false
-        }else{
-           lookup[letter] -=1
-        }
-    }
-    return true
+    return num[middle] === val ? middle : -1
 }
 
-console.log(anagram(["q,w,e"],["q,w,eq"]))
+console.log(binary([0,1,2,3,4,5,6,7,8,9],55))

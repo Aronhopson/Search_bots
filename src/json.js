@@ -1,98 +1,27 @@
 export const robots = [
-    {
-        id: 1,
-        name: "Leanne Graham",
-        username: "Bret",
-        email: "wdgyqwt@jsgcyje"
-    },
-    {
-        id: 2,
-        name: "Ervin Howell",
-        username: "Antontte",
-        email: "wdgyqwt@jyje"
-    },
-    {
-        id: 3,
-        name: "Clementine Bauch",
-        username: "Bret",
-        email: "wdgyqwt@jsgyje"
-    },
-    {
-        id: 4,
-        name: "Patricia Bauch",
-        username: "Bret",
-        email: "wyqwt@jsgcyje"
-    },
-    {
-        id: 5,
-        name: "Lea Graham",
-        username: "Bret",
-        email: "wdgyqwt@jsgcyje"
-    },
-    {
-        id: 6,
-        name: "Er Howell",
-        username: "Antontte",
-        email: "wdgyqwt@jyje"
-    },
-    {
-        id: 7,
-        name: "Clem Bauch",
-        username: "Bret",
-        email: "wdgyqwt@jsgyje"
-    },
-    {
-        id: 8,
-        name: "Patric Bauch",
-        username: "Bret",
-        email: "wyqwt@jsgcyje"
-    },
-    {
-        id: 16,
-        name: "Leanne Gram",
-        username: "Bret",
-        email: "wdgyqwt@jsgcyje"
-    },
-    {
-        id: 15,
-        name: "Ervin Holl",
-        username: "Antontte",
-        email: "wdgyqwt@jyje"
-    },
-    {
-        id: 14,
-        name: "Clement Bauch",
-        username: "Bret",
-        email: "wdgyqwt@jsgyje"
-    },
-    {
-        id: 13,
-        name: "Pia Bauch",
-        username: "Bret",
-        email: "wyqwt@jsgcyje"
-    },
-    {
-        id: 9,
-        name: " Graham",
-        username: "Bret",
-        email: "wdgyqwt@jsgcyje"
-    },
-    {
-        id: 11,
-        name: "Ervin",
-        username: "Antontte",
-        email: "wdgyqwt@jyje"
-    },
-    {
-        id: 10,
-        name: "Clem Bauch",
-        username: "Bret",
-        email: "wdgyqwt@jsgyje"
-    },
-    {
-        id: 12,
-        name: " Bauch",
-        username: "Bret",
-        email: "wyqwt@jsgcyje"
-    }
-]
+   
+            { name: "bulbasaur", url: "https://pokeapi.co/api/v2/pokemon/1/" },
+            { name: "ivysaur", url: "https://pokeapi.co/api/v2/pokemon/2/" },
+            { name: "venusaur", url: "https://pokeapi.co/api/v2/pokemon/3/" },
+            { name: "charmander", url: "https://pokeapi.co/api/v2/pokemon/4/" },
+            { name: "charmeleon", url: "https://pokeapi.co/api/v2/pokemon/5/" },
+            { name: "charizard", url: "https://pokeapi.co/api/v2/pokemon/6/" },
+            { name: "squirtle", url: "https://pokeapi.co/api/v2/pokemon/7/" },
+            { name: "wartortle", url: "https://pokeapi.co/api/v2/pokemon/8/" },
+            { name: "blastoise", url: "https://pokeapi.co/api/v2/pokemon/9/" },
+            { name: "caterpie", url: "https://pokeapi.co/api/v2/pokemon/10/" },
+            { name: "metapod", url: "https://pokeapi.co/api/v2/pokemon/11/" },
+            {
+                name: "butterfree",
+                url: "https://pokeapi.co/api/v2/pokemon/12/"
+            },
+            { name: "weedle", url: "https://pokeapi.co/api/v2/pokemon/13/" },
+            { name: "kakuna", url: "https://pokeapi.co/api/v2/pokemon/14/" },
+            { name: "beedrill", url: "https://pokeapi.co/api/v2/pokemon/15/" },
+            { name: "pidgey", url: "https://pokeapi.co/api/v2/pokemon/16/" },
+            { name: "pidgeotto", url: "https://pokeapi.co/api/v2/pokemon/17/" },
+            { name: "pidgeot", url: "https://pokeapi.co/api/v2/pokemon/18/" },
+            { name: "rattata", url: "https://pokeapi.co/api/v2/pokemon/19/" },
+            { name: "raticate", url: "https://pokeapi.co/api/v2/pokemon/20/" }
+       
+];

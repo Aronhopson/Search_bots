@@ -7,18 +7,22 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      robots: robots,
+      robots: [],
       SearchField: ""
     }
   }
   onSearchChange = (event) => {
     this.setState({ SearchField: event.target.value })
   }
+ 
+ componentDidMount(){
+  this.setState({robots:robots})
+ }
+
   render() {
     const FilterBots = this.state.robots.filter(robots => {
       return robots.name.toLowerCase().includes(this.state.SearchField.toLowerCase());
     })
-    console.log(FilterBots)
     return (
       <div className="tc">
         <h1>Bots</h1>
